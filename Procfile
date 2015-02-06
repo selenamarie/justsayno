@@ -1,1 +1,1 @@
-web: gunicorn sitebuilder:app
+web: gunicorn app:app
