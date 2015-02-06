@@ -1,0 +1,19 @@
+body {
+    font-size: 2em;
+    font-color: white; 
+    background-image: url('nope.gif') ;
+}
+
+div#page {
+    margin: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+}
+
+div#nope {
+    font-size: 4em;
+    color: white; 
+    text-align: center;
+}
+
