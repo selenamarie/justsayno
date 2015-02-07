@@ -1,19 +1,35 @@
-body {
-    font-size: 2em;
-    font-color: white; 
+html, body {
     background-image: url('nope.gif') ;
+    margin:0;
+    padding:0;
+    height:100%;
 }
 
-div#page {
-    margin: 100px;
-    top: 50%;
-    transform: translateY(-50%);
-    position: relative;
+#wrapper {
+    min-height:100%;
+    position:relative;
 }
-
-div#nope {
+#header {
+    padding:10px;
+    background:#5ee;
+}
+#content {
+    padding-top:40px;
+    padding:10px;
+    padding-bottom:10px;   /* Height of the footer element */
+}
+#nope {
     font-size: 4em;
     color: white; 
     text-align: center;
+    padding: 10px;
 }
-
+#footer {
+    width:100%;
+    height:2em;
+    position:absolute;
+    bottom:0;
+    left:0;
+    background: #efefef;
+    text-align: right;
+}

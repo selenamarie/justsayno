@@ -6,10 +6,13 @@
 </head>
 <body>
     <link href="/static/nope.css" rel="stylesheet" type="text/css">
-    <div id="page">
-    {% block content %}
-        <p>Default content to be displayed</p>
-    {% endblock content %}
+    <div id="wrapper">
+        <div id="content">
+        {% block content %}
+            <p>Default content to be displayed</p>
+        {% endblock content %}
+        </div>
+        <div id="footer">Inspiration to say no. Source code at <a href="http://github.com/selenamarie/justsayno">github.com/selenamarie/justsayno</a></div>
     </div>
 </body>
 </html>
