@@ -28,5 +28,11 @@ def api_nope():
     nope = {'say:': WAYS_TO_SAY_NO[index]}
     return jsonify(nope)
 
+@app.route('/no')
+def no():
+    index = randint(0, len(WAYS_TO_SAY_NO) - 1)
+    no = WAYS_TO_SAY_NO[index]
+    return render_template('no.html', no=no)
+
 if __name__ == '__main__':
     app.run(debug=True)
